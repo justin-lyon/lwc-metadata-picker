@@ -46,3 +46,18 @@ export default class WipContainer extends LightningElement {
   }
 }
 ```
+
+## API Documentation
+
+**Name**|**Type**|**Description**
+-----|-----|-----
+combo-label|@api prop|Label for the Filter Combobox
+picker-label|@api prop|Label for the Search Input
+icon-name|@api prop|Icon for records and results
+placeholder|@api prop|Placeholder text for the Search Input
+mdt-name|@api prop|Custom Metadata API Name
+title|@api prop|Custom Metadata Field displayed in Search Results Title
+subtitle|@api prop|Custom Metadata Field display in Search Results Subtitle
+filter-by|@api prop|Custom Metadata Field to Filter by, defaults to subtitle
+onselected|event|Fired when a Metadata Record is selected. event.detail is the metadata record id.
+
