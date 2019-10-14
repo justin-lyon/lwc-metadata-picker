@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Breath__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Breath</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fire</fullName>
+                <default>true</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Ice</fullName>
+                <default>false</default>
+                <label>Ice</label>
+            </value>
+            <value>
+                <fullName>Lightning</fullName>
+                <default>false</default>
+                <label>Lightning</label>
+            </value>
+            <value>
+                <fullName>Acid</fullName>
+                <default>false</default>
+                <label>Acid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+<template>
+  <div>
+    <lightning-combobox
+      name="statusPicker"
+      label={comboLabel}
+      value={selectedStatus}
+      options={filterOptions}
+      onchange={handleFilterSelected}></lightning-combobox>
+
+    <div class="slds-p-top_small">
+      <c-metadata-picker
+        mdt-name={mdtName}
+        icon-name={iconName}
+        field-label={pickerLabel}
+        title={title}
+        subtitle={subtitle}
+        filter-by={filterBy}
+        filter-test={filterTest}
+        placeholder={placeholder}
+        onselected={handleMdtSelected}></c-metadata-picker>
+    </div>
+  </div>
+</template>
