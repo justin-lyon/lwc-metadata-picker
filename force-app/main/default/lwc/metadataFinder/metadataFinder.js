@@ -14,8 +14,18 @@ export default class WipContainer extends LightningElement {
 
   @api mdtName = ''
   @api title = 'MasterLabel'
-  @api subtitle = 'Id'
   @api filterBy = 'MasterLabel'
+
+  @track context
+  @api
+  get subtitle () {
+    return this.context
+  }
+
+  set subtitle (value) {
+    this.context = value
+    this.filterBy = value
+  }
 
   connectedCallback () {
     this.fetchFilterOptions()
